@@ -1,20 +1,62 @@
 #logoBar{
   width: 30vw;
   height: 100vh;
+  text-align: center;
 }
 #siteLogo{
   width: 100%;
 }
 body {
   display: flex;
+  background: #F3E5F5
 }
 #staffGallery{
   width: 70vw;
-  display: inherit;
-
+  display: flex;
+  justify-content: space-evenly;
 }
+
+.card {
+  text-align: center;
+  width: 100px;
+  background: white;
+  height: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  #logoBar {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card {
+    width: 35%;
+  }
+  #staffGallery {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+h1 {
+  color: #F9A825;
+  font-family: cursive;
+}
+h3 {
+  font-family: cursive
+}
+
+
 .galleryImage{
-  width: 100%;
-  height: auto;
-  height: 300px;
+  width: 100px;
+  height: 100px;
 }
